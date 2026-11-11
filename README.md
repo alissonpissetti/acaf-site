@@ -18,6 +18,15 @@ npm run dev
 
 Abra [http://127.0.0.1:5179](http://127.0.0.1:5179).
 
+### Páginas legais (App Store / Play Console)
+
+| URL | Uso |
+|-----|-----|
+| `/termos-de-uso` | Termos de uso (atalho `/termos`) |
+| `/politica-de-privacidade` | Política de privacidade (atalho `/privacidade`) |
+
+Em produção, configure o servidor estático com fallback `index.html` para essas rotas (SPA).
+
 ### Variáveis de ambiente
 
 Copie `.env.example` para `.env` e ajuste os links dos portais:
@@ -27,6 +36,25 @@ Copie `.env.example` para `.env` e ajuste os links dos portais:
 | `VITE_CORPORATE_URL` | Portal da empresa (login/cadastro) |
 | `VITE_PARTNER_URL` | Portal da academia |
 | `VITE_CONTACT_EMAIL` | Destino do formulário de contato (`mailto:`) |
+| `VITE_API_URL` | URL da API (produção ou dev sem proxy no mesmo host) |
+| `VITE_API_PROXY_TARGET` | Backend local no `npm run dev` (proxy `/api` e `/shared`) |
+
+### Conexão com a API
+
+O site usa o **mesmo padrão** dos portais (`acaf-corporate`, etc.):
+
+| Arquivo | Papel |
+|---------|--------|
+| `src/config.ts` | `apiUrl()` / `readApiUrl()` |
+| `src/api/http.ts` | `fetchApi`, `getJson`, `postJson`, `ApiError` |
+| `src/api/index.ts` | reexport para novos módulos (`contact`, `leads`, …) |
+| `public/api-config.js` | `window.__CONNECT_API_URL__` em produção |
+
+**Dev:** com a API em `8787`, requests relativos (`/shared/...`, `/api/...`) passam pelo proxy do Vite.
+
+**Produção:** nginx (recomendado) encaminha `/api` e `/shared` para o backend — `apiUrl` fica relativo. Alternativa: preencher `api-config.js` ou `VITE_API_URL`.
+
+Novos recursos do site: criar `src/api/<feature>.ts` usando `getJson` / `postJson` e tipar em `src/types/`.
 
 ## Estrutura
 

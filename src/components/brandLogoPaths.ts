@@ -1,15 +1,20 @@
-export type BrandLogoVariant = 'lime' | 'purple' | 'white';
+/**
+ * Prioridade: wordmark roxa em fundos claros (SVG oficial).
+ * Em fundos roxos/escuros: limão ou branco (SVG), não o lockup gradiente.
+ */
+export type BrandLogoVariant = 'purple' | 'lime' | 'white';
 
+/** Proporção do viewBox dos SVG movly-logo-*.svg */
 export const BRAND_LOGO_NATURAL: Record<BrandLogoVariant, { w: number; h: number }> = {
-  lime: { w: 791, h: 386 },
-  purple: { w: 813, h: 414 },
-  white: { w: 791, h: 386 },
+  purple: { w: 127, h: 37 },
+  lime: { w: 127, h: 37 },
+  white: { w: 127, h: 37 },
 };
 
 export const BRAND_LOGO_SRC: Record<BrandLogoVariant, string> = {
-  lime: '/branding/movly-logo-lime-on-purple.png',
-  purple: '/branding/movly-logo-purple-on-lime.png',
-  white: '/branding/movly-logo-lime-on-purple.png',
+  purple: '/branding/movly-logo-purple.svg',
+  lime: '/branding/movly-logo-lime.svg',
+  white: '/branding/movly-logo-white.svg',
 };
 
 export function brandLogoDimensions(variant: BrandLogoVariant, height: number) {

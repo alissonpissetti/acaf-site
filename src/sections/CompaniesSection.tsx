@@ -3,9 +3,10 @@ import { BrandLogo } from '../components/BrandLogo';
 
 const BULLETS = [
   ['Só paga quem usa.', 'Colaborador sem check-in no mês não entra na fatura.'],
-  ['Valor fixo, sem surpresa.', 'Fez 1 ou 100 check-ins, o valor por colaborador é o mesmo.'],
-  ['Cadastro em minutos, gestão num portal só.', 'Convites, colaboradores ativos e faturas no mesmo lugar.'],
-  ['Custo compartilhado.', 'A empresa banca uma parte; o colaborador escolhe e completa o próprio plano.'],
+  ['Academia preferida.', 'Cada colaborador escolhe a unidade principal ao ativar o benefício.'],
+  ['Plano no app.', 'O colaborador escolhe o plano que combina com o uso na academia preferida.'],
+  ['Custo compartilhado.', 'A empresa banca uma parte; o colaborador completa o plano no app.'],
+  ['Portal da empresa.', 'Convites, colaboradores ativos e faturas no mesmo lugar.'],
 ] as const;
 
 export function CompaniesSection() {
@@ -16,8 +17,8 @@ export function CompaniesSection() {
           <span className="site-eyebrow">Para empresas</span>
           <h2 className="site-h2">benefício parado é dinheiro parado.</h2>
           <p className="site-lead">
-            Muita empresa paga por benefício que ninguém usa. Na Movly, a empresa entra com uma parte, só por quem fez
-            check-in no mês, e o colaborador completa com o plano que escolher.
+            Muita empresa paga por benefício que ninguém usa. Na Movly, o colaborador escolhe a academia preferida e o
+            plano no app. A empresa entra com uma parte e paga só por quem fez check-in no mês.
           </p>
           <ul className="site-check-list">
             {BULLETS.map(([strong, rest]) => (

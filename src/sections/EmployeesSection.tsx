@@ -1,11 +1,11 @@
 const CARDS = [
   {
-    title: 'Uma rede, vários lugares',
-    text: 'Academias, estúdios e aulas perto de casa ou do trabalho.',
+    title: 'Sua academia preferida',
+    text: 'Você define a unidade onde treina e mantém seu vínculo com ela.',
   },
   {
-    title: 'Troca quando quiser',
-    text: 'Musculação de manhã, yoga na quarta, dança na sexta.',
+    title: 'Seu jeito de treinar',
+    text: 'Musculação, aulas e modalidades conforme o plano e o que a unidade oferece.',
   },
   {
     title: 'Check-in pelo app',
@@ -17,11 +17,7 @@ const CARDS = [
   },
 ] as const;
 
-const PLANS = [
-  { name: 'Plano básico', tone: 'white' as const, note: 'Rede regional · modalidades essenciais' },
-  { name: 'Plano completo', tone: 'purple' as const, note: 'Rede ampliada · mais estúdios' },
-  { name: 'Plano premium', tone: 'deep' as const, note: 'Máxima cobertura · a definir com RH' },
-];
+import { EmployeePlansGrid } from './EmployeePlansGrid';
 
 export function EmployeesSection() {
   return (
@@ -35,8 +31,8 @@ export function EmployeesSection() {
               não precisa amar academia. só precisa achar o seu jeito.
             </h2>
             <p className="site-lead" style={{ color: 'var(--movly-purple-deep)' }}>
-              Tem gente que ama puxar ferro. Tem gente que prefere dançar, lutar ou alongar. Na Movly, o seu jeito de se
-              mexer muda quando você quiser.
+              Tem gente que ama puxar ferro. Tem gente que prefere dançar, lutar ou alongar. Na Movly, você encaixa o
+              plano na sua academia preferida e treina do seu jeito.
             </p>
           </div>
           <div className="site-card-grid">
@@ -47,25 +43,13 @@ export function EmployeesSection() {
               </div>
             ))}
           </div>
-          <div id="planos">
-            <h3 className="site-h3" style={{ color: 'var(--movly-purple-deep)', marginBottom: 8 }}>
-              escolha o seu plano.
-            </h3>
-            <p style={{ margin: '0 0 20px', fontSize: 17, color: 'var(--movly-purple-deep)' }}>
-              A parte da empresa já vem descontada. Você paga só a diferença do plano que escolher. Os valores finais
-              dependem do que cada empresa investe.
+          <div id="planos" className="site-plans-section">
+            <h3 className="site-h3 site-plans-section__title">escolha o seu plano.</h3>
+            <p className="site-plans-section__lead">
+              Planos e valores vêm do mesmo cadastro do app. A parte da empresa já vem descontada — você paga só a
+              diferença do plano que escolher (incluindo a academia preferida).
             </p>
-            <div className="site-plan-grid">
-              {PLANS.map((plan) => (
-                <div key={plan.name} className={`site-plan site-plan--${plan.tone}`}>
-                  <span style={{ fontFamily: 'var(--font-display)', fontWeight: 500, fontSize: 20 }}>{plan.name}</span>
-                  <span className="site-plan__price">
-                    R$ —<small>/mês</small>
-                  </span>
-                  <span style={{ fontSize: 15 }}>{plan.note}</span>
-                </div>
-              ))}
-            </div>
+            <EmployeePlansGrid />
           </div>
           <div style={{ display: 'flex', flexWrap: 'wrap', alignItems: 'center', gap: 16 }}>
             <a className="site-btn site-btn--primary" href="#contato">

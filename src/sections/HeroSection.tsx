@@ -12,8 +12,8 @@ export function HeroSection() {
             <span className="site-hero__pill">Bem-estar para empresas e colaboradores</span>
             <h1 className="site-h1 site-hero__title">a vida acontece quando você se move.</h1>
             <p className="site-hero__text">
-              Academias, estúdios e aulas num app só. A sua empresa entra com uma parte e você escolhe o plano que
-              combina com o seu jeito de se mexer.
+              A sua empresa entra com uma parte, você escolhe o plano e treina na sua academia preferida — tudo com
+              check-in pelo app, no seu ritmo.
             </p>
             <div className="site-hero__cta">
               <a className="site-btn site-btn--lime" href="#empresas">
@@ -27,10 +27,9 @@ export function HeroSection() {
                 Tenho academia
               </a>
             </div>
-            <div className="site-hero__acaf">
-              <span>Um modelo saudável para todos, com</span>
-              <img src="/branding/acaf_connect_lockup.png" alt="by ACAF Brasil" width={104} height={32} />
-            </div>
+            <p className="site-hero__acaf">
+              Um modelo justo para todos, em parceria com a ACAF Brasil.
+            </p>
           </div>
 
           <div className="site-phone-wrap">
@@ -54,17 +53,17 @@ export function HeroSection() {
                     </span>
                   </div>
                   <div className="site-phone__list">
-                    <span className="site-phone__list-title">Perto de você</span>
+                    <span className="site-phone__list-title">Sua academia</span>
                     {[
-                      { label: 'Musculação', dist: '450 m', bg: 'var(--movly-gradient)' },
-                      { label: 'Yoga', dist: '800 m', bg: 'var(--movly-lime)' },
-                      { label: 'Dança', dist: '1,2 km', bg: 'var(--movly-purple)' },
+                      { label: 'Musculação', note: 'incluso no plano', bg: 'var(--movly-gradient)' },
+                      { label: 'Yoga', note: 'aulas da unidade', bg: 'var(--movly-lime)' },
+                      { label: 'Funcional', note: 'seu jeito de treinar', bg: 'var(--movly-purple)' },
                     ].map((row) => (
                       <div key={row.label} className="site-phone__row">
                         <span className="site-phone__row-icon" style={{ background: row.bg }} />
                         <span>
                           <strong style={{ display: 'block', fontSize: 13 }}>{row.label}</strong>
-                          <span style={{ fontSize: 11, color: 'var(--movly-muted)' }}>{row.dist}</span>
+                          <span style={{ fontSize: 11, color: 'var(--movly-muted)' }}>{row.note}</span>
                         </span>
                       </div>
                     ))}

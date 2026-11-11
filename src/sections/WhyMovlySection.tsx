@@ -15,7 +15,7 @@ const CARDS = [
     tag: 'repasse justo',
     tone: 'lime' as const,
     title: '~80% fica com a academia',
-    text: 'Em média, a maior parte do valor vai para quem recebe o aluno. Academia valorizada é rede forte.',
+    text: 'Em média, a maior parte do valor vai para quem recebe o aluno. Academia valorizada sustenta o modelo.',
   },
   {
     tag: 'academia no centro',

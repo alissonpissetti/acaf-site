@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { corporateLoginUrl, partnerLoginUrl } from '../config/links';
 import { BrandLogo } from './BrandLogo';
 
@@ -7,21 +8,21 @@ export function SiteFooter() {
       <div className="site-footer__grid">
         <div className="site-footer__top">
           <div style={{ flex: '1 1 300px', display: 'flex', flexDirection: 'column', gap: 16 }}>
-            <BrandLogo variant="white" height={50} />
+            <BrandLogo variant="lime" height={50} />
             <p>o bem-estar começa no movimento.</p>
           </div>
           <nav className="site-footer__nav" aria-label="Rodapé">
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <strong>Movly</strong>
-              <a href="#como-funciona">Como funciona</a>
-              <a href="#duvidas">Dúvidas</a>
-              <a href="#contato">Contato</a>
+            <Link to="/#como-funciona">Como funciona</Link>
+            <Link to="/#duvidas">Dúvidas</Link>
+            <Link to="/#contato">Contato</Link>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <strong>Para você</strong>
-              <a href="#empresas">Empresas</a>
-              <a href="#colaboradores">Colaboradores</a>
-              <a href="#academias">Academias</a>
+            <Link to="/#empresas">Empresas</Link>
+            <Link to="/#colaboradores">Colaboradores</Link>
+            <Link to="/#academias">Academias</Link>
             </div>
             <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
               <strong>Acesso</strong>
@@ -34,8 +35,8 @@ export function SiteFooter() {
         <div className="site-footer__legal">
           <span>© 2026 Movly · by ACAF Brasil. Movly é uma marca de A L M LTDA · CNPJ 68.679.868/0001-01</span>
           <span style={{ display: 'flex', gap: 20 }}>
-            <a href="#termos">Termos de uso</a>
-            <a href="#privacidade">Privacidade</a>
+            <Link to="/termos-de-uso">Termos de uso</Link>
+            <Link to="/politica-de-privacidade">Privacidade</Link>
           </span>
         </div>
       </div>

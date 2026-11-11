@@ -1,5 +1,8 @@
 const FEATURES = [
-  ['Mais alunos, sem papelada', 'Colaboradores das empresas parceiras escolhem você no app e fazem check-in na hora.'],
+  [
+    'Mais alunos, sem papelada',
+    'Colaboradores das empresas parceiras podem escolher sua unidade como academia preferida e fazer check-in no app.',
+  ],
   ['~80% de repasse médio', 'A maior parte do valor volta para quem recebe o aluno, pelos check-ins feitos na sua unidade.'],
   ['Repasse transparente', 'Check-ins e repasses visíveis para a academia, sem caixa-preta.'],
   ['ACAF Brasil ao seu lado', 'A ACAF Brasil garante os direitos dos donos de academia, para que o modelo seja saudável para todos.'],
@@ -17,7 +20,7 @@ export function PartnersSection() {
             <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px,2.2vw,26px)' }}>
               do valor fica com a sua academia
             </span>
-            <img src="/branding/acaf_connect_lockup.png" alt="by ACAF Brasil" width={130} height={40} />
+            <span className="site-partners-visual__acaf">em parceria com a ACAF Brasil</span>
           </div>
         </div>
         <div className="site-split__copy">

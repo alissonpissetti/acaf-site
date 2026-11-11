@@ -42,12 +42,14 @@ export const FAQ_BY_TAB: Record<FaqTab, FaqItem[]> = {
       answer: 'Pelo convite que chega da sua empresa. Baixe o app, aceite o convite e pronto.',
     },
     {
-      question: 'Posso trocar de academia?',
-      answer: 'Pode. A Movly é uma rede: você escolhe onde treinar.',
+      question: 'Como escolho minha academia?',
+      answer:
+        'Na ativação do benefício você define a academia preferida. É nela que o plano vale e onde você faz check-in.',
     },
     {
       question: 'Tem aula além de musculação?',
-      answer: 'Tem yoga, pilates, dança, luta, funcional e muito mais — conforme a rede na sua região.',
+      answer:
+        'Depende da sua academia e do plano: yoga, pilates, dança, funcional e outras modalidades conforme o que a unidade oferece.',
     },
     {
       question: 'Minha empresa não tem. E agora?',
@@ -57,7 +59,7 @@ export const FAQ_BY_TAB: Record<FaqTab, FaqItem[]> = {
   ],
   aca: [
     {
-      question: 'Como minha academia entra na rede?',
+      question: 'Como minha academia entra na Movly?',
       answer:
         'O credenciamento é feito pela ACAF Brasil, que garante os direitos dos donos de academia dentro da Movly. Comece pelo formulário abaixo.',
     },
