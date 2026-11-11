@@ -33,8 +33,8 @@ Copie `.env.example` para `.env` e ajuste os links dos portais:
 
 | Variável | Uso |
 |----------|-----|
-| `VITE_CORPORATE_URL` | Portal da empresa (login/cadastro) |
-| `VITE_PARTNER_URL` | Portal da academia |
+| `VITE_CORPORATE_URL` | Portal da empresa (produção: `https://empresa.sejamovly.com`) |
+| `VITE_PARTNER_URL` | Portal da academia (produção: `https://parceiro.sejamovly.com`) |
 | `VITE_CONTACT_EMAIL` | Destino do formulário de contato (`mailto:`) |
 | `VITE_API_URL` | URL da API (produção ou dev sem proxy no mesmo host) |
 | `VITE_API_PROXY_TARGET` | Backend local no `npm run dev` (proxy `/api` e `/shared`) |
