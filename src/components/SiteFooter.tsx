@@ -32,10 +32,7 @@ export function SiteFooter() {
           </nav>
         </div>
         <div className="site-footer__legal">
-          <span style={{ display: 'flex', flexDirection: 'column', gap: 4 }}>
-            <span>© 2026 Movly · by ACAF Brasil. Movly é uma marca de A L M LTDA · CNPJ 68.679.868/0001-01</span>
-            <span>R. Natal Pedro Dalla Stella, 559 · Santa Felicidade · Curitiba/PR · CEP 82030-490</span>
-          </span>
+          <span>© 2026 Movly · by ACAF Brasil. Movly é uma marca de A L M LTDA · CNPJ 68.679.868/0001-01</span>
           <span style={{ display: 'flex', gap: 20 }}>
             <a href="#termos">Termos de uso</a>
             <a href="#privacidade">Privacidade</a>
