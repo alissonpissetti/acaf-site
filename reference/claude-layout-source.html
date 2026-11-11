@@ -1,0 +1,771 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head>
+<meta charset="utf-8">
+<title>Movly · Bem-estar para empresas e colaboradores</title>
+<script src="b550287c-95bf-46b8-aa9a-bc51c2bde6a1"></script>
+<meta name="hz:slide-selector" content="[data-canvas-width]"><meta name="hz:canvas-width" content="1440"><meta name="hz:canvas-height" content="8000"></head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<style>/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4q9DaRvziissg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("d5e6ded2-7842-4a8c-97d9-a3b9b5ae10eb") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4q9DaRvziissg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("d5e6ded2-7842-4a8c-97d9-a3b9b5ae10eb") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4q9DaRvziissg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("d5e6ded2-7842-4a8c-97d9-a3b9b5ae10eb") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/figtree/v9/_Xms-HUzqDCFdgfMm4q9DaRvziissg.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Figtree';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("d5e6ded2-7842-4a8c-97d9-a3b9b5ae10eb") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwtsZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwv8ZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwtMZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwtcZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("f410beab-357d-4523-99a4-381406ab2566") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* cyrillic-ext */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwtsZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F;
+}
+/* cyrillic */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwv8ZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116;
+}
+/* vietnamese */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwtMZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB;
+}
+/* latin-ext */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/unbounded/v12/Yq6W-LOTXCb04q32xlpwtcZfvRIkSYZH.woff2) format('woff2');
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+/* latin */
+@font-face {
+  font-family: 'Unbounded';
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("f410beab-357d-4523-99a4-381406ab2566") format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+<style>
+body{margin:0;background:#FFFFFF}
+a{color:#8254E4}a:hover{color:#6A3FD0}
+input[type=range]{accent-color:#8254E4;width:100%;height:28px;cursor:pointer}
+details>summary{list-style:none;cursor:pointer}
+details>summary::-webkit-details-marker{display:none}
+details[open] .faq-plus{transform:rotate(45deg)}
+.faq-plus{transition:transform .2s ease}
+.navlink{color:#3D3756;text-decoration:none}
+.navlink:hover{color:#8254E4}
+input:focus-visible,select:focus-visible,button:focus-visible,a:focus-visible,summary:focus-visible{outline:3px solid #CBF74F;outline-offset:2px}
+</style>
+</helmet>
+<div style="font-family: 'Figtree', system-ui, -apple-system, sans-serif; color: #1A1530; background: #FFFFFF; line-height: 1.5; -webkit-font-smoothing: antialiased" data-canvas-width="1440" data-canvas-height="8000" data-document-role="page" data-label="Home · sejamovly">
+
+  <!-- Faixa de aviso -->
+  <div style="background: #2A1B57; color: #FFFFFF; font-size: 14px; padding: 10px 24px; text-align: center">
+    <span style="color: #CBF74F; font-weight: 700">Novo por aqui:</span> a empresa entra com uma parte, você escolhe o plano, e ~80% do valor fica com a academia. <a href="#modelo" style="color: #FFFFFF; font-weight: 600">Entenda o modelo</a>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header style="max-width: 1280px; margin: 0 auto; padding: 18px 24px; display: flex; flex-wrap: wrap; align-items: center; gap: 16px 32px">
+    <a href="#topo" aria-label="Movly, início" style="display: flex; align-items: center; gap: 8px; text-decoration: none">
+      <img src="5e34028d-ada0-40a8-91e7-1347bf93194b" alt="movly." style="width: 126px; height: 37px; display: block">
+    </a>
+    <nav aria-label="Principal" style="display: flex; flex-wrap: wrap; gap: 8px 28px; font-weight: 600; font-size: 16px; flex: 1 1 420px">
+      <a class="navlink" href="#como-funciona">Como funciona</a>
+      <a class="navlink" href="#empresas">Para empresas</a>
+      <a class="navlink" href="#colaboradores">Para colaboradores</a>
+      <a class="navlink" href="#academias">Para academias</a>
+      <a class="navlink" href="#duvidas">Dúvidas</a>
+    </nav>
+    <div style="display: flex; align-items: center; gap: 12px; flex-wrap: wrap">
+      <a href="#entrar" style="color: #3D3756; font-weight: 600; text-decoration: none; padding: 12px 16px">Entrar</a>
+      <a href="#contato" style="display: inline-flex; align-items: center; gap: 8px; min-height: 48px; box-sizing: border-box; padding: 12px 24px; border-radius: 999px; background: #8254E4; color: #FFFFFF; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 15px; text-decoration: none">Fale com a gente</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section id="topo" style="padding: 0 16px">
+    <div style="position: relative; overflow: hidden; max-width: 1408px; margin: 0 auto; border-radius: 48px; background: #8254E4; padding: clamp(48px, 7vw, 96px) clamp(24px, 5vw, 72px)">
+      <div aria-hidden="true" style="position: absolute; right: -260px; top: -280px; width: 760px; height: 760px; border-radius: 50%; border: 110px solid rgba(137, 180, 224, 0.45); box-sizing: border-box"></div>
+      <div aria-hidden="true" style="position: absolute; left: -180px; bottom: -260px; width: 460px; height: 460px; border-radius: 50%; border: 70px solid rgba(203, 247, 79, 0.9); box-sizing: border-box"></div>
+      <div style="position: relative; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; align-items: center; gap: 56px">
+        <div style="flex: 1 1 480px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+          <span style="align-self: flex-start; padding: 8px 16px; border-radius: 999px; background: rgba(255, 255, 255, 0.14); color: #FFFFFF; font-weight: 600; font-size: 15px">Bem-estar para empresas e colaboradores</span>
+          <h1 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(42px, 6vw, 80px); line-height: 1.02; letter-spacing: -0.035em; color: #CBF74F">a vida acontece quando você se move.</h1>
+          <p style="margin: 0; max-width: 540px; font-size: clamp(18px, 1.6vw, 21px); color: #FFFFFF">Academias, estúdios e aulas num app só. A sua empresa entra com uma parte e você escolhe o plano que combina com o seu jeito de se mexer.</p>
+          <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 4px">
+            <a href="#empresas" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; box-sizing: border-box; padding: 16px 28px; border-radius: 999px; background: #CBF74F; color: #2A1B57; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 16px; text-decoration: none">
+              Quero para minha empresa
+              <svg width="20" height="20" sc-camel-view-box="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"></path></svg>
+            </a>
+            <a href="#colaboradores" style="display: inline-flex; align-items: center; min-height: 56px; box-sizing: border-box; padding: 16px 24px; border-radius: 999px; border: 2px solid rgba(255, 255, 255, 0.7); color: #FFFFFF; font-weight: 700; font-size: 16px; text-decoration: none">Sou colaborador</a>
+            <a href="#academias" style="display: inline-flex; align-items: center; min-height: 56px; box-sizing: border-box; padding: 16px 24px; border-radius: 999px; border: 2px solid rgba(255, 255, 255, 0.7); color: #FFFFFF; font-weight: 700; font-size: 16px; text-decoration: none">Tenho academia</a>
+          </div>
+          <div style="display: flex; align-items: center; gap: 10px; padding-top: 8px">
+            <span style="color: rgba(255, 255, 255, 0.85); font-size: 14px">Um modelo saudável para todos, com</span>
+            <img src="09c0c23a-d1d4-4c0e-a637-fdf461acfe5a" alt="by ACAF Brasil" style="width: 104px; height: 32px; display: block">
+          </div>
+        </div>
+
+        <!-- Celular -->
+        <div style="flex: 1 1 360px; display: flex; justify-content: center; min-width: 0">
+          <div style="position: relative; width: 100%; max-width: 440px; height: 600px; border-radius: 220px; background: linear-gradient(160deg, #89B4E0 0%, #7579E5 100%); display: flex; align-items: center; justify-content: center">
+            <div aria-hidden="true" style="position: absolute; right: -14px; top: 64px; width: 96px; height: 96px; border-radius: 50%; border: 22px solid #CBF74F; box-sizing: border-box"></div>
+            <div role="img" aria-label="Tela do app Movly com check-in confirmado" style="width: 286px; height: 560px; border-radius: 44px; background: #1A1530; padding: 10px; box-sizing: border-box; box-shadow: 0 30px 70px rgba(42, 27, 87, 0.45)">
+              <div style="width: 100%; height: 100%; border-radius: 36px; background: #F6F5FB; overflow: hidden; display: flex; flex-direction: column">
+                <div style="background: #8254E4; padding: 34px 20px 22px; display: flex; flex-direction: column; gap: 14px">
+                  <img src="06b9b558-2e00-445b-9e80-a6c88be1706f" alt="" style="width: 82px; height: 24px; display: block">
+                  <span style="color: #FFFFFF; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 19px; line-height: 1.15">bora mexer, Ana?</span>
+                </div>
+                <div style="margin: -2px 14px 0; transform: translateY(-14px); background: #FFFFFF; border-radius: 22px; padding: 16px; display: flex; align-items: center; gap: 12px; box-shadow: 0 10px 24px rgba(42, 27, 87, 0.12)">
+                  <span style="width: 44px; height: 44px; flex: none; border-radius: 50%; background: #CBF74F; display: flex; align-items: center; justify-content: center">
+                    <svg width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#2A1B57" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>
+                  </span>
+                  <span style="display: flex; flex-direction: column">
+                    <span style="font-weight: 700; font-size: 14px; color: #1A1530">Check-in feito</span>
+                    <span style="font-size: 12px; color: #6F6A86">Studio Centro · 12:05</span>
+                  </span>
+                </div>
+                <div style="padding: 0 16px; display: flex; flex-direction: column; gap: 10px">
+                  <span style="font-weight: 700; font-size: 13px; color: #1A1530">Perto de você</span>
+                  <div style="background: #FFFFFF; border-radius: 16px; padding: 12px; display: flex; align-items: center; gap: 10px">
+                    <span style="width: 36px; height: 36px; border-radius: 12px; background: linear-gradient(135deg, #89B4E0, #7579E5)"></span>
+                    <span style="display: flex; flex-direction: column; flex: 1"><span style="font-weight: 600; font-size: 13px">Musculação</span><span style="font-size: 11px; color: #6F6A86">450 m</span></span>
+                  </div>
+                  <div style="background: #FFFFFF; border-radius: 16px; padding: 12px; display: flex; align-items: center; gap: 10px">
+                    <span style="width: 36px; height: 36px; border-radius: 12px; background: #CBF74F"></span>
+                    <span style="display: flex; flex-direction: column; flex: 1"><span style="font-weight: 600; font-size: 13px">Yoga</span><span style="font-size: 11px; color: #6F6A86">800 m</span></span>
+                  </div>
+                  <div style="background: #FFFFFF; border-radius: 16px; padding: 12px; display: flex; align-items: center; gap: 10px">
+                    <span style="width: 36px; height: 36px; border-radius: 12px; background: #8254E4"></span>
+                    <span style="display: flex; flex-direction: column; flex: 1"><span style="font-weight: 600; font-size: 13px">Dança</span><span style="font-size: 11px; color: #6F6A86">1,2 km</span></span>
+                  </div>
+                </div>
+                <div style="margin: auto 16px 18px; padding: 14px; border-radius: 999px; background: #8254E4; color: #FFFFFF; text-align: center; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 13px">fazer check-in</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modalidades -->
+  <section aria-label="Modalidades" style="max-width: 1200px; margin: 0 auto; padding: 48px 24px 24px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: 12px">
+    <span style="font-weight: 700; color: #3D3756; margin-right: 8px">Vale:</span>
+    <span style="padding: 10px 20px; border-radius: 999px; background: #F6F5FB; border: 1px solid #E9E6F2; font-weight: 600">musculação</span>
+    <span style="padding: 10px 20px; border-radius: 999px; background: #F6F5FB; border: 1px solid #E9E6F2; font-weight: 600">yoga</span>
+    <span style="padding: 10px 20px; border-radius: 999px; background: #F6F5FB; border: 1px solid #E9E6F2; font-weight: 600">pilates</span>
+    <span style="padding: 10px 20px; border-radius: 999px; background: #F6F5FB; border: 1px solid #E9E6F2; font-weight: 600">dança</span>
+    <span style="padding: 10px 20px; border-radius: 999px; background: #F6F5FB; border: 1px solid #E9E6F2; font-weight: 600">luta</span>
+    <span style="padding: 10px 20px; border-radius: 999px; background: #F6F5FB; border: 1px solid #E9E6F2; font-weight: 600">funcional</span>
+    <span style="padding: 10px 20px; border-radius: 999px; background: #CBF74F; font-weight: 700; color: #2A1B57">e o seu jeito</span>
+  </section>
+
+  <!-- COMO FUNCIONA -->
+  <section id="como-funciona" style="max-width: 1200px; margin: 0 auto; padding: 72px 24px">
+    <div style="display: flex; flex-direction: column; gap: 14px; max-width: 720px; margin-bottom: 48px">
+      <span style="font-weight: 700; color: #8254E4; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">Como funciona</span>
+      <h2 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em">movly em 3 passos.</h2>
+      <p style="margin: 0; font-size: 19px; color: #3D3756">Sua empresa oferece, você escolhe onde e quando treinar. Sem burocracia, sem culpa, no seu ritmo.</p>
+    </div>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 20px">
+      <div style="position: relative; overflow: hidden; border-radius: 32px; background: #8254E4; padding: 36px; min-height: 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+        <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 600; font-size: 96px; line-height: 0.9; color: #CBF74F">1</span>
+        <h3 style="margin: auto 0 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #FFFFFF">Sua empresa entra na Movly</h3>
+        <p style="margin: 0; color: rgba(255, 255, 255, 0.9)">O RH fecha o contrato, define quanto a empresa investe por colaborador e cadastra o time no portal.</p>
+      </div>
+      <div style="position: relative; overflow: hidden; border-radius: 32px; background: linear-gradient(160deg, #89B4E0 0%, #7579E5 100%); padding: 36px; min-height: 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+        <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 600; font-size: 96px; line-height: 0.9; color: #FFFFFF">2</span>
+        <h3 style="margin: auto 0 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #1A1530">Você ativa no app e escolhe seu plano</h3>
+        <p style="margin: 0; color: #1A1530">O convite chega pela sua empresa. Você escolhe o plano e completa a diferença, se houver.</p>
+      </div>
+      <div style="position: relative; overflow: hidden; border-radius: 32px; background: #CBF74F; padding: 36px; min-height: 300px; box-sizing: border-box; display: flex; flex-direction: column; gap: 16px">
+        <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 600; font-size: 96px; line-height: 0.9; color: #8254E4">3</span>
+        <h3 style="margin: auto 0 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 24px; line-height: 1.15; color: #2A1B57">Escolhe onde treinar e faz check-in</h3>
+        <p style="margin: 0; color: #2A1B57">Academia, estúdio ou aula da rede. Hoje musculação, amanhã yoga. Pode.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- EMPRESAS -->
+  <section id="empresas" style="background: #F6F5FB; padding: 96px 24px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <span style="font-weight: 700; color: #8254E4; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">Para empresas</span>
+        <h2 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em">benefício parado é dinheiro parado.</h2>
+        <p style="margin: 0; font-size: 19px; color: #3D3756">Muita empresa paga por benefício que ninguém usa. Na Movly, a empresa entra com uma parte, só por quem fez check-in no mês, e o colaborador completa com o plano que escolher.</p>
+        <ul style="list-style: none; margin: 8px 0 0; padding: 0; display: flex; flex-direction: column; gap: 16px">
+          <li style="display: flex; gap: 14px; align-items: flex-start">
+            <span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #CBF74F; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#2A1B57" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+            <span><strong>Só paga quem usa.</strong> Colaborador sem check-in no mês não entra na fatura.</span>
+          </li>
+          <li style="display: flex; gap: 14px; align-items: flex-start">
+            <span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #CBF74F; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#2A1B57" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+            <span><strong>Valor fixo, sem surpresa.</strong> Fez 1 ou 100 check-ins, o valor por colaborador é o mesmo.</span>
+          </li>
+          <li style="display: flex; gap: 14px; align-items: flex-start">
+            <span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #CBF74F; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#2A1B57" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+            <span><strong>Cadastro em minutos, gestão num portal só.</strong> Convites, colaboradores ativos e faturas no mesmo lugar.</span>
+          </li>
+          <li style="display: flex; gap: 14px; align-items: flex-start">
+            <span style="width: 32px; height: 32px; flex: none; border-radius: 50%; background: #CBF74F; display: flex; align-items: center; justify-content: center"><svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#2A1B57" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg></span>
+            <span><strong>Custo compartilhado.</strong> A empresa banca uma parte; o colaborador escolhe e completa o próprio plano.</span>
+          </li>
+        </ul>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 12px">
+          <a href="#contato" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; box-sizing: border-box; padding: 16px 28px; border-radius: 999px; background: #8254E4; color: #FFFFFF; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 16px; text-decoration: none">Solicitar proposta</a>
+          <a href="#simulador" style="display: inline-flex; align-items: center; min-height: 56px; box-sizing: border-box; padding: 16px 24px; border-radius: 999px; border: 2px solid #8254E4; color: #8254E4; font-weight: 700; font-size: 16px; text-decoration: none">Simular custo</a>
+        </div>
+      </div>
+
+      <!-- Portal mockup -->
+      <div style="flex: 1 1 480px; min-width: 0">
+        <div role="img" aria-label="Portal da empresa Movly com lista de colaboradores e fatura do mês" style="border-radius: 32px; overflow: hidden; background: #FFFFFF; display: flex; box-shadow: 0 30px 70px rgba(42, 27, 87, 0.18); border: 1px solid #E9E6F2">
+          <div style="width: 150px; flex: none; background: #8254E4; padding: 28px 20px; box-sizing: border-box; display: flex; flex-direction: column; gap: 22px">
+            <img src="06b9b558-2e00-445b-9e80-a6c88be1706f" alt="" style="width: 92px; height: 27px; display: block">
+            <span style="height: 12px; width: 92px; border-radius: 999px; background: rgba(255, 255, 255, 0.5)"></span>
+            <span style="height: 12px; width: 72px; border-radius: 999px; background: rgba(255, 255, 255, 0.28)"></span>
+            <span style="height: 12px; width: 84px; border-radius: 999px; background: rgba(255, 255, 255, 0.28)"></span>
+          </div>
+          <div style="flex: 1; min-width: 0; padding: 28px; display: flex; flex-direction: column; gap: 18px">
+            <div style="display: flex; flex-wrap: wrap; gap: 12px">
+              <div style="flex: 1 1 120px; border-radius: 18px; background: #F6F5FB; padding: 14px 16px; display: flex; flex-direction: column">
+                <span style="font-size: 12px; color: #6F6A86; font-weight: 600">Ativos no mês</span>
+                <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 26px; color: #1A1530">84</span>
+              </div>
+              <div style="flex: 1 1 120px; border-radius: 18px; background: #CBF74F; padding: 14px 16px; display: flex; flex-direction: column">
+                <span style="font-size: 12px; color: #2A1B57; font-weight: 600">Fatura prevista</span>
+                <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 26px; color: #2A1B57">84 × valor</span>
+              </div>
+            </div>
+            <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 18px">colaboradores</span>
+            <div style="display: flex; flex-direction: column; gap: 12px">
+              <div style="display: flex; align-items: center; gap: 12px"><span style="width: 34px; height: 34px; border-radius: 50%; background: #E9E6F2; flex: none"></span><span style="height: 12px; flex: 1; max-width: 180px; border-radius: 999px; background: #E9E6F2"></span><span style="margin-left: auto; padding: 6px 12px; border-radius: 999px; background: rgba(203, 247, 79, 0.7); color: #2A1B57; font-weight: 700; font-size: 13px">ativo</span></div>
+              <div style="display: flex; align-items: center; gap: 12px"><span style="width: 34px; height: 34px; border-radius: 50%; background: #E9E6F2; flex: none"></span><span style="height: 12px; flex: 1; max-width: 150px; border-radius: 999px; background: #E9E6F2"></span><span style="margin-left: auto; padding: 6px 12px; border-radius: 999px; background: rgba(203, 247, 79, 0.7); color: #2A1B57; font-weight: 700; font-size: 13px">ativo</span></div>
+              <div style="display: flex; align-items: center; gap: 12px"><span style="width: 34px; height: 34px; border-radius: 50%; background: #E9E6F2; flex: none"></span><span style="height: 12px; flex: 1; max-width: 170px; border-radius: 999px; background: #E9E6F2"></span><span style="margin-left: auto; padding: 6px 12px; border-radius: 999px; background: #F1EFF7; color: #5E5975; font-weight: 700; font-size: 13px">sem check-in</span></div>
+              <div style="display: flex; align-items: center; gap: 12px"><span style="width: 34px; height: 34px; border-radius: 50%; background: #E9E6F2; flex: none"></span><span style="height: 12px; flex: 1; max-width: 140px; border-radius: 999px; background: #E9E6F2"></span><span style="margin-left: auto; padding: 6px 12px; border-radius: 999px; background: #F1EFF7; color: #5E5975; font-weight: 700; font-size: 13px">convidado</span></div>
+            </div>
+            <span style="align-self: flex-start; display: inline-flex; align-items: center; gap: 8px; padding: 12px 18px; border-radius: 999px; background: #8254E4; color: #FFFFFF; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 13px">
+              <svg width="16" height="16" sc-camel-view-box="0 0 24 24" fill="none" stroke="#CBF74F" stroke-width="3" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg>
+              convidar colaboradores
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIMULADOR -->
+  <section id="simulador" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+    <div style="position: relative; overflow: hidden; border-radius: 40px; background: #2A1B57; color: #FFFFFF; padding: clamp(32px, 5vw, 64px); display: flex; flex-wrap: wrap; gap: 48px">
+      <div aria-hidden="true" style="position: absolute; right: -200px; bottom: -240px; width: 520px; height: 520px; border-radius: 50%; border: 80px solid rgba(117, 121, 229, 0.45); box-sizing: border-box"></div>
+      <div style="position: relative; flex: 1 1 420px; min-width: 0; display: flex; flex-direction: column; gap: 28px">
+        <div style="display: flex; flex-direction: column; gap: 12px">
+          <span style="font-weight: 700; color: #CBF74F; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">Simulador</span>
+          <h2 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(28px, 3.4vw, 44px); line-height: 1.1; letter-spacing: -0.03em">quanto a sua empresa investiria?</h2>
+          <p style="margin: 0; color: rgba(255, 255, 255, 0.85); font-size: 17px">Mexa nos números e veja a parte da empresa quando ela paga só por quem usa, em vez de pagar por todos.</p>
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="sim-total" style="display: flex; justify-content: space-between; font-weight: 600"><span>Colaboradores na empresa</span><span style="color: #CBF74F">{{totalLabel}}</span></label>
+          <input id="sim-total" type="range" min="10" max="2000" step="10" value="{{total}}" sc-camel-on-change="{{onTotal}}">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="sim-pct" style="display: flex; justify-content: space-between; font-weight: 600"><span>Quantos fazem check-in no mês</span><span style="color: #CBF74F">{{pctLabel}}</span></label>
+          <input id="sim-pct" type="range" min="5" max="100" step="5" value="{{pct}}" sc-camel-on-change="{{onPct}}">
+        </div>
+        <div style="display: flex; flex-direction: column; gap: 8px">
+          <label for="sim-valor" style="display: flex; justify-content: space-between; font-weight: 600"><span>Parte da empresa por colaborador ativo</span><span style="color: #CBF74F">{{valorLabel}}</span></label>
+          <input id="sim-valor" type="range" min="30" max="60" step="1" value="{{valor}}" sc-camel-on-change="{{onValor}}">
+        </div>
+      </div>
+      <div style="position: relative; flex: 1 1 360px; min-width: 0; display: flex; flex-direction: column; gap: 16px; justify-content: center">
+        <div style="border-radius: 28px; background: #CBF74F; color: #2A1B57; padding: 28px; display: flex; flex-direction: column; gap: 6px">
+          <span style="font-weight: 700">Investimento da empresa no mês</span>
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(34px, 4vw, 48px); line-height: 1.05; letter-spacing: -0.02em">{{fatura}}</span>
+          <span style="font-size: 15px">{{ativosLabel}} × {{valorLabel}}</span>
+        </div>
+        <div style="border-radius: 28px; background: rgba(255, 255, 255, 0.08); border: 1px solid rgba(255, 255, 255, 0.2); padding: 24px 28px; display: flex; flex-direction: column; gap: 4px">
+          <span style="font-weight: 600; color: rgba(255, 255, 255, 0.85)">Se pagasse por todos</span>
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 28px; text-decoration: line-through; text-decoration-thickness: 2px; color: rgba(255, 255, 255, 0.8)">{{tradicional}}</span>
+        </div>
+        <span style="font-size: 17px"><strong style="color: #CBF74F">{{economia}}</strong> que deixam de virar custo parado, todo mês.</span>
+        <span style="font-size: 14px; color: rgba(255, 255, 255, 0.75)">Não inclui o plano que cada colaborador escolhe e paga por conta própria.</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- COLABORADORES -->
+  <section id="colaboradores" style="padding: 0 16px">
+    <div style="position: relative; overflow: hidden; max-width: 1408px; margin: 0 auto; border-radius: 48px; background: #CBF74F; padding: clamp(48px, 7vw, 96px) clamp(24px, 5vw, 72px)">
+      <div aria-hidden="true" style="position: absolute; right: -160px; top: -160px; width: 480px; height: 480px; border-radius: 50%; border: 80px solid #8254E4; box-sizing: border-box"></div>
+      <div style="position: relative; max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 40px">
+        <div style="display: flex; flex-direction: column; gap: 16px; max-width: 760px">
+          <span style="font-weight: 700; color: #2A1B57; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">Para colaboradores</span>
+          <h2 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(32px, 4.4vw, 58px); line-height: 1.06; letter-spacing: -0.03em; color: #8254E4">não precisa amar academia. só precisa achar o seu jeito.</h2>
+          <p style="margin: 0; font-size: 19px; color: #2A1B57">Tem gente que ama puxar ferro. Tem gente que prefere dançar, lutar ou alongar. Na Movly, o seu jeito de se mexer muda quando você quiser.</p>
+        </div>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+          <div style="border-radius: 28px; background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+            <svg width="32" height="32" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="10" r="3"></circle><path d="M12 21s-7-5.6-7-11a7 7 0 0114 0c0 5.4-7 11-7 11z"></path></svg>
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 19px">Uma rede, vários lugares</h3>
+            <p style="margin: 0; color: #3D3756">Academias, estúdios e aulas perto de casa ou do trabalho.</p>
+          </div>
+          <div style="border-radius: 28px; background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+            <svg width="32" height="32" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M17 2l4 4-4 4"></path><path d="M3 11V9a3 3 0 013-3h15"></path><path d="M7 22l-4-4 4-4"></path><path d="M21 13v2a3 3 0 01-3 3H3"></path></svg>
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 19px">Troca quando quiser</h3>
+            <p style="margin: 0; color: #3D3756">Musculação de manhã, yoga na quarta, dança na sexta.</p>
+          </div>
+          <div style="border-radius: 28px; background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+            <svg width="32" height="32" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6" y="2" width="12" height="20" rx="3"></rect><path d="M11 18h2"></path></svg>
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 19px">Check-in pelo app</h3>
+            <p style="margin: 0; color: #3D3756">Chegou, abriu o app, entrou. Sem papelada.</p>
+          </div>
+          <div style="border-radius: 28px; background: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 12px">
+            <svg width="32" height="32" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 12v9H4v-9"></path><path d="M2 7h20v5H2z"></path><path d="M12 22V7"></path><path d="M12 7H8a2.5 2.5 0 010-5c3 0 4 5 4 5zM12 7h4a2.5 2.5 0 000-5c-3 0-4 5-4 5z"></path></svg>
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 19px">A empresa ajuda a pagar</h3>
+            <p style="margin: 0; color: #3D3756">Sua empresa entra com uma parte. Você escolhe o plano e completa o resto.</p>
+          </div>
+        </div>
+        <div id="planos" style="display: flex; flex-direction: column; gap: 20px">
+          <div style="display: flex; flex-direction: column; gap: 8px; max-width: 760px">
+            <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(24px, 2.6vw, 34px); line-height: 1.1; color: #2A1B57">escolha o seu plano.</h3>
+            <p style="margin: 0; font-size: 17px; color: #2A1B57">A parte da empresa já vem descontada. Você paga só a diferença do plano que escolher. [VALORES finais dependem do que cada empresa investe]</p>
+          </div>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 16px">
+          <div style="border-radius: 28px; background: #FFFFFF; color: #1A1530; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 20px">[PLANO 1]</span>
+            <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 34px; line-height: 1.05">R$ [—]<span style="font-family: 'Figtree', sans-serif; font-size: 16px; font-weight: 600">/mês</span></span>
+            <span style="font-size: 15px">[REDE / MODALIDADES]</span>
+            <span style="font-size: 15px">[O QUE O PLANO INCLUI]</span>
+          </div>
+          <div style="border-radius: 28px; background: #8254E4; color: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 20px">[PLANO 2]</span>
+            <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 34px; line-height: 1.05">R$ [—]<span style="font-family: 'Figtree', sans-serif; font-size: 16px; font-weight: 600">/mês</span></span>
+            <span style="font-size: 15px">[REDE / MODALIDADES]</span>
+            <span style="font-size: 15px">[O QUE O PLANO INCLUI]</span>
+          </div>
+          <div style="border-radius: 28px; background: #2A1B57; color: #FFFFFF; padding: 28px; display: flex; flex-direction: column; gap: 10px">
+            <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 20px">[PLANO 3]</span>
+            <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 34px; line-height: 1.05">R$ [—]<span style="font-family: 'Figtree', sans-serif; font-size: 16px; font-weight: 600">/mês</span></span>
+            <span style="font-size: 15px">[REDE / MODALIDADES]</span>
+            <span style="font-size: 15px">[O QUE O PLANO INCLUI]</span>
+          </div>
+          </div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 16px">
+          <a href="#contato" style="display: inline-flex; align-items: center; gap: 10px; min-height: 56px; box-sizing: border-box; padding: 16px 28px; border-radius: 999px; background: #8254E4; color: #FFFFFF; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 16px; text-decoration: none">Indicar a Movly para o meu RH</a>
+          <span style="color: #2A1B57; font-weight: 600">Sua empresa ainda não tem? Manda pra quem decide.</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ACADEMIAS -->
+  <section id="academias" style="max-width: 1200px; margin: 0 auto; padding: 96px 24px">
+    <div style="display: flex; flex-wrap: wrap; gap: 56px; align-items: center">
+      <div style="flex: 1 1 420px; min-width: 0; position: relative; height: 460px; border-radius: 220px; background: linear-gradient(160deg, #89B4E0 0%, #7579E5 100%); overflow: hidden; display: flex; align-items: center; justify-content: center">
+        <div aria-hidden="true" style="position: absolute; left: -90px; bottom: -90px; width: 260px; height: 260px; border-radius: 50%; border: 50px solid #CBF74F; box-sizing: border-box"></div>
+        <div style="position: relative; display: flex; flex-direction: column; align-items: center; gap: 14px; text-align: center; padding: 24px">
+          <span style="font-size: 16px; font-weight: 700; color: #1A1530">repasse médio</span>
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 600; font-size: clamp(72px, 9vw, 128px); line-height: 0.95; letter-spacing: -0.04em; color: #FFFFFF">~80%</span>
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(20px, 2.2vw, 26px); color: #1A1530">do valor fica com a sua academia</span>
+          <img src="09c0c23a-d1d4-4c0e-a637-fdf461acfe5a" alt="by ACAF Brasil" style="width: 130px; height: 40px; display: block; margin-top: 12px">
+        </div>
+      </div>
+      <div style="flex: 1 1 460px; min-width: 0; display: flex; flex-direction: column; gap: 20px">
+        <span style="font-weight: 700; color: #8254E4; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">Para academias e estúdios</span>
+        <h2 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em">sem academia, não existe movly.</h2>
+        <p style="margin: 0; font-size: 19px; color: #3D3756">É na academia que o movimento acontece. Por isso a Movly foi desenhada a partir dela: quem recebe o aluno todo dia é o centro do modelo, não um fornecedor no fim da fila.</p>
+        <p style="margin: 0; font-size: 19px; color: #3D3756">Na prática, o dinheiro fica onde o treino acontece: em média, <strong style="color: #1A1530">~80% do que é pago</strong> (parte da empresa + plano do aluno) é repassado à academia.</p>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 14px">
+          <div style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 22px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 17px">Mais alunos, sem papelada</strong><span style="color: #3D3756">Colaboradores das empresas parceiras escolhem você no app e fazem check-in na hora.</span></div>
+          <div style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 22px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 17px">~80% de repasse médio</strong><span style="color: #3D3756">A maior parte do valor volta para quem recebe o aluno, pelos check-ins feitos na sua unidade.</span></div>
+          <div style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 22px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 17px">Repasse transparente</strong><span style="color: #3D3756">Check-ins e repasses visíveis para a academia, sem caixa-preta.</span></div>
+          <div style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 22px; display: flex; flex-direction: column; gap: 6px"><strong style="font-size: 17px">ACAF Brasil ao seu lado</strong><span style="color: #3D3756">A ACAF Brasil garante os direitos dos donos de academia, para que o modelo seja saudável para todos.</span></div>
+        </div>
+        <div style="display: flex; flex-wrap: wrap; gap: 12px; padding-top: 8px">
+          <a href="#contato" style="display: inline-flex; align-items: center; min-height: 56px; box-sizing: border-box; padding: 16px 28px; border-radius: 999px; background: #8254E4; color: #FFFFFF; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 16px; text-decoration: none">Quero credenciar minha academia</a>
+          <a href="#contato" style="display: inline-flex; align-items: center; min-height: 56px; box-sizing: border-box; padding: 16px 24px; border-radius: 999px; border: 2px solid #8254E4; color: #8254E4; font-weight: 700; font-size: 16px; text-decoration: none">Indicar minha academia</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- POR QUE MOVLY -->
+  <section id="modelo" style="background: #8254E4; padding: 96px 24px; position: relative; overflow: hidden">
+    <div aria-hidden="true" style="position: absolute; left: -220px; top: -220px; width: 560px; height: 560px; border-radius: 50%; border: 90px solid rgba(137, 180, 224, 0.4); box-sizing: border-box"></div>
+    <div style="position: relative; max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+      <h2 style="margin: 0; max-width: 820px; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em; color: #CBF74F">por que a movly é diferente.</h2>
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px">
+        <div style="border-radius: 32px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); padding: 32px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 15px; color: #CBF74F">sempre por uso</span>
+          <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 22px; line-height: 1.2; color: #FFFFFF">Cobrança só de quem fez check-in</h3>
+          <p style="margin: 0; color: rgba(255, 255, 255, 0.9)">Nada de pagar por licença esquecida. Não usou no mês, não paga.</p>
+        </div>
+        <div style="border-radius: 32px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); padding: 32px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 15px; color: #CBF74F">sempre compartilhado</span>
+          <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 22px; line-height: 1.2; color: #FFFFFF">Empresa + colaborador</h3>
+          <p style="margin: 0; color: rgba(255, 255, 255, 0.9)">O RH entra com um valor fixo por quem usa; o colaborador escolhe o plano e completa a diferença.</p>
+        </div>
+        <div style="border-radius: 32px; background: #CBF74F; padding: 32px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 15px; color: #2A1B57">repasse justo</span>
+          <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 22px; line-height: 1.2; color: #2A1B57">~80% fica com a academia</h3>
+          <p style="margin: 0; color: #2A1B57">Em média, a maior parte do valor vai para quem recebe o aluno. Academia valorizada é rede forte.</p>
+        </div>
+        <div style="border-radius: 32px; background: rgba(255, 255, 255, 0.1); border: 1px solid rgba(255, 255, 255, 0.25); padding: 32px; display: flex; flex-direction: column; gap: 12px">
+          <span style="font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 15px; color: #CBF74F">academia no centro</span>
+          <h3 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 22px; line-height: 1.2; color: #FFFFFF">Sem academia, não existe agregador</h3>
+          <p style="margin: 0; color: rgba(255, 255, 255, 0.9)">A academia é o pivô de tudo. Por isso a ACAF Brasil garante os direitos dos donos de academia, para que o modelo seja saudável para todos.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DÚVIDAS -->
+  <section id="duvidas" style="max-width: 960px; margin: 0 auto; padding: 96px 24px">
+    <div style="display: flex; flex-direction: column; gap: 14px; margin-bottom: 32px">
+      <span style="font-weight: 700; color: #8254E4; font-size: 15px; letter-spacing: 0.08em; text-transform: uppercase">Dúvidas</span>
+      <h2 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(32px, 4vw, 52px); line-height: 1.08; letter-spacing: -0.03em">perguntas que todo mundo faz.</h2>
+    </div>
+    <div role="group" aria-label="Escolha o público" style="display: inline-flex; flex-wrap: wrap; gap: 6px; padding: 6px; border-radius: 999px; background: #F6F5FB; border: 1px solid #E9E6F2; margin-bottom: 24px">
+      <button type="button" aria-pressed="{{tabEmp.pressed}}" sc-camel-on-click="{{tabEmp.pick}}" style="{{tabEmp.style}}">Empresas</button>
+      <button type="button" aria-pressed="{{tabCol.pressed}}" sc-camel-on-click="{{tabCol.pick}}" style="{{tabCol.style}}">Colaboradores</button>
+      <button type="button" aria-pressed="{{tabAca.pressed}}" sc-camel-on-click="{{tabAca.pick}}" style="{{tabAca.style}}">Academias</button>
+    </div>
+
+    <sc-if value="{{isEmp}}" hint-placeholder-val="{{ true }}">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Como a cobrança funciona?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">A empresa paga um valor fixo por colaborador que fez pelo menos um check-in no mês; quem não usou não entra na fatura. O colaborador completa com o plano que escolher. A fatura da empresa é mensal e recorrente, com histórico no portal.</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">O valor muda se a pessoa treinar muito?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Não. Um check-in ou cem, a parte da empresa por colaborador ativo no mês é a mesma.</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Como cadastro meus colaboradores?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Pelo portal da empresa: você cadastra o time e envia os convites. Cada pessoa ativa o acesso no app.</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Existe um número mínimo de colaboradores?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">[DEFINIR: tamanho mínimo de empresa]</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Consigo ver as faturas anteriores?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Sim. O histórico de faturas fica no portal para consulta a qualquer momento.</p>
+        </details>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isCol}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Quem pode usar?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Colaboradores das empresas parceiras da Movly.</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Quanto eu pago?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Depende do plano que você escolher. Sua empresa já paga uma parte, e você completa a diferença. [COMO o colaborador paga: desconto em folha, cartão etc.]</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Como eu ativo?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Pelo convite que chega da sua empresa. Baixe o app, aceite o convite e pronto.</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Posso trocar de academia?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Pode. A Movly é uma rede: você escolhe onde treinar.</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Tem aula além de musculação?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Tem: [LISTAR as modalidades que a rede já oferece].</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Minha empresa não tem. E agora?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Mostra esta página pro RH. Ou deixa o contato dele no formulário abaixo que a gente conversa.</p>
+        </details>
+      </div>
+    </sc-if>
+
+    <sc-if value="{{isAca}}" hint-placeholder-val="{{ false }}">
+      <div style="display: flex; flex-direction: column; gap: 12px">
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Como minha academia entra na rede?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">O credenciamento é feito pela ACAF Brasil, que garante os direitos dos donos de academia dentro da Movly. Comece pelo formulário abaixo.</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Como recebo pelos alunos Movly?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Em média, ~80% do valor pago (parte da empresa + plano do aluno) é repassado às academias, de acordo com os check-ins feitos na sua unidade. [DETALHAR periodicidade do repasse]</p>
+        </details>
+        <details style="border-radius: 24px; border: 1px solid #E9E6F2; padding: 0 24px">
+          <summary style="display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 64px; font-weight: 700; font-size: 18px">Preciso mudar meu controle de acesso?<svg class="faq-plus" width="22" height="22" sc-camel-view-box="0 0 24 24" fill="none" stroke="#8254E4" stroke-width="2.5" stroke-linecap="round" aria-hidden="true"><path d="M12 5v14M5 12h14"></path></svg></summary>
+          <p style="margin: 0 0 22px; color: #3D3756">Não. O check-in é pelo app. Integrar a catraca por QR code ou biometria é opcional.</p>
+        </details>
+      </div>
+    </sc-if>
+  </section>
+
+  <!-- CONTATO -->
+  <section id="contato" style="padding: 0 16px 96px">
+    <div style="position: relative; overflow: hidden; max-width: 1408px; margin: 0 auto; border-radius: 48px; background: linear-gradient(135deg, #89B4E0 0%, #7579E5 100%); padding: clamp(40px, 6vw, 88px) clamp(24px, 5vw, 72px)">
+      <div aria-hidden="true" style="position: absolute; right: -120px; bottom: -160px; width: 420px; height: 420px; border-radius: 50%; border: 70px solid #CBF74F; box-sizing: border-box"></div>
+      <div style="position: relative; max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; gap: 48px; align-items: center">
+        <div style="flex: 1 1 400px; min-width: 0; display: flex; flex-direction: column; gap: 18px">
+          <h2 style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: clamp(34px, 4.4vw, 60px); line-height: 1.04; letter-spacing: -0.035em; color: #1A1530">bora conversar?</h2>
+          <p style="margin: 0; font-size: 19px; color: #1A1530; max-width: 460px">Conta um pouco sobre você e a gente volta com o próximo passo. Vale para empresas, colaboradores e academias.</p>
+        </div>
+        <form aria-label="Fale com a Movly" style="flex: 1 1 440px; min-width: 0; background: #FFFFFF; border-radius: 32px; padding: 32px; display: flex; flex-direction: column; gap: 16px; box-shadow: 0 30px 70px rgba(42, 27, 87, 0.22)">
+          <div style="display: flex; flex-direction: column; gap: 6px">
+            <label for="f-perfil" style="font-weight: 600; font-size: 15px">Eu sou</label>
+            <sc-raw-select id="f-perfil" style="min-height: 52px; border-radius: 16px; border: 1px solid #D4CFE4; padding: 0 16px; font: inherit; font-size: 16px; color: #1A1530; background: #FFFFFF">
+              <option>RH ou gestor de uma empresa</option>
+              <option>Colaborador indicando minha empresa</option>
+              <option>Dono(a) de academia ou estúdio</option>
+            </sc-raw-select>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 16px">
+            <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+              <label for="f-nome" style="font-weight: 600; font-size: 15px">Nome</label>
+              <input id="f-nome" type="text" autocomplete="name" style="min-height: 52px; box-sizing: border-box; border-radius: 16px; border: 1px solid #D4CFE4; padding: 0 16px; font: inherit; font-size: 16px">
+            </div>
+            <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+              <label for="f-email" style="font-weight: 600; font-size: 15px">E-mail</label>
+              <input id="f-email" type="email" autocomplete="email" style="min-height: 52px; box-sizing: border-box; border-radius: 16px; border: 1px solid #D4CFE4; padding: 0 16px; font: inherit; font-size: 16px">
+            </div>
+          </div>
+          <div style="display: flex; flex-wrap: wrap; gap: 16px">
+            <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+              <label for="f-empresa" style="font-weight: 600; font-size: 15px">Empresa ou academia</label>
+              <input id="f-empresa" type="text" autocomplete="organization" style="min-height: 52px; box-sizing: border-box; border-radius: 16px; border: 1px solid #D4CFE4; padding: 0 16px; font: inherit; font-size: 16px">
+            </div>
+            <div style="flex: 1 1 200px; display: flex; flex-direction: column; gap: 6px">
+              <label for="f-tel" style="font-weight: 600; font-size: 15px">WhatsApp</label>
+              <input id="f-tel" type="tel" autocomplete="tel" style="min-height: 52px; box-sizing: border-box; border-radius: 16px; border: 1px solid #D4CFE4; padding: 0 16px; font: inherit; font-size: 16px">
+            </div>
+          </div>
+          <button type="button" style="margin-top: 6px; min-height: 56px; border: 0; border-radius: 999px; background: #8254E4; color: #FFFFFF; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 16px; cursor: pointer">Quero conversar</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer style="background: #2A1B57; color: #FFFFFF; padding: 72px 24px 40px">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-direction: column; gap: 48px">
+      <div style="display: flex; flex-wrap: wrap; gap: 48px; justify-content: space-between">
+        <div style="flex: 1 1 300px; display: flex; flex-direction: column; gap: 16px">
+          <div style="display: flex; flex-direction: column; align-items: flex-start; gap: 6px">
+            <img src="06b9b558-2e00-445b-9e80-a6c88be1706f" alt="movly." style="width: 170px; height: 50px; display: block">
+            <img src="09c0c23a-d1d4-4c0e-a637-fdf461acfe5a" alt="by ACAF Brasil" style="width: 88px; height: 27px; display: block; margin-left: 82px">
+          </div>
+          <p style="margin: 0; font-family: 'Unbounded', 'Figtree', sans-serif; font-weight: 500; font-size: 18px; color: #CBF74F">o bem-estar começa no movimento.</p>
+        </div>
+        <nav aria-label="Rodapé" style="flex: 2 1 520px; display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 32px">
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <strong style="color: #CBF74F">Movly</strong>
+            <a href="#como-funciona" style="color: #FFFFFF; text-decoration: none">Como funciona</a>
+            <a href="#duvidas" style="color: #FFFFFF; text-decoration: none">Dúvidas</a>
+            <a href="#contato" style="color: #FFFFFF; text-decoration: none">Contato</a>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <strong style="color: #CBF74F">Para você</strong>
+            <a href="#empresas" style="color: #FFFFFF; text-decoration: none">Empresas</a>
+            <a href="#colaboradores" style="color: #FFFFFF; text-decoration: none">Colaboradores</a>
+            <a href="#academias" style="color: #FFFFFF; text-decoration: none">Academias</a>
+          </div>
+          <div style="display: flex; flex-direction: column; gap: 10px">
+            <strong style="color: #CBF74F">Acesso</strong>
+            <a href="#entrar" style="color: #FFFFFF; text-decoration: none">Portal da empresa</a>
+            <a href="#entrar" style="color: #FFFFFF; text-decoration: none">Portal da academia</a>
+            <a href="https://instagram.com/sejamovly" style="color: #FFFFFF; text-decoration: none">@sejamovly</a>
+          </div>
+        </nav>
+      </div>
+      <div style="display: flex; flex-wrap: wrap; gap: 12px 24px; justify-content: space-between; border-top: 1px solid rgba(255, 255, 255, 0.18); padding-top: 24px; font-size: 14px; color: rgba(255, 255, 255, 0.8)">
+        <span style="display: flex; flex-direction: column; gap: 4px"><span>© 2026 Movly · by ACAF Brasil. Movly é uma marca de A L M LTDA · CNPJ 68.679.868/0001-01</span><span>R. Natal Pedro Dalla Stella, 559 · Santa Felicidade · Curitiba/PR · CEP 82030-490</span></span>
+        <span style="display: flex; gap: 20px"><a href="#termos" style="color: rgba(255, 255, 255, 0.85)">Termos de uso</a><a href="#privacidade" style="color: rgba(255, 255, 255, 0.85)">Privacidade</a></span>
+      </div>
+    </div>
+  </footer>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script="" data-props="{&quot;$preview&quot;:{&quot;width&quot;:1440,&quot;height&quot;:9000}}">
+class Component extends DCLogic {
+  constructor(props) {
+    super(props);
+    this.state = { total: 200, pct: 40, valor: 45, tab: 'emp' };
+  }
+  brl(n) {
+    return 'R$ ' + Math.round(n).toLocaleString('pt-BR');
+  }
+  tab(id, current) {
+    var on = id === current;
+    return {
+      pressed: on ? 'true' : 'false',
+      pick: () => this.setState({ tab: id }),
+      style: {
+        minHeight: '44px', padding: '10px 22px', borderRadius: '999px', border: '0',
+        font: 'inherit', fontWeight: 700, fontSize: '15px', cursor: 'pointer',
+        background: on ? '#8254E4' : 'transparent', color: on ? '#FFFFFF' : '#3D3756'
+      }
+    };
+  }
+  renderVals() {
+    var s = this.state;
+    var ativos = Math.max(0, Math.round(s.total * s.pct / 100));
+    var fatura = ativos * s.valor;
+    var trad = s.total * s.valor;
+    return {
+      total: s.total,
+      pct: s.pct,
+      valor: s.valor,
+      totalLabel: s.total.toLocaleString('pt-BR'),
+      pctLabel: s.pct + '%',
+      valorLabel: this.brl(s.valor),
+      ativosLabel: ativos.toLocaleString('pt-BR') + ' ativos',
+      fatura: this.brl(fatura),
+      tradicional: this.brl(trad),
+      economia: this.brl(trad - fatura),
+      onTotal: (e) => this.setState({ total: Number(e.target.value) }),
+      onPct: (e) => this.setState({ pct: Number(e.target.value) }),
+      onValor: (e) => this.setState({ valor: Number(e.target.value) }),
+      tabEmp: this.tab('emp', s.tab),
+      tabCol: this.tab('col', s.tab),
+      tabAca: this.tab('aca', s.tab),
+      isEmp: s.tab === 'emp',
+      isCol: s.tab === 'col',
+      isAca: s.tab === 'aca'
+    };
+  }
+}
+</script>
+
+
+</body></html>
