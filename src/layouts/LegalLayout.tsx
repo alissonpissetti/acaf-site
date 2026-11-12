@@ -11,7 +11,7 @@ export function LegalLayout({ children }: LegalLayoutProps) {
   return (
     <div className="site-page site-page--legal">
       <header className="legal-shell-header site-container site-container--header">
-        <Link to="/" aria-label="Movly, início">
+        <Link to="/" aria-label="movly. by ACAF Brasil, início">
           <BrandLogo variant="purple" height={37} />
         </Link>
         <nav className="legal-shell-header__links" aria-label="Legal">

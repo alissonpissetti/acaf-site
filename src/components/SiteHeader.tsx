@@ -56,7 +56,7 @@ export function SiteHeader() {
   return (
     <header className="site-header-shell">
       <div className="site-container site-header__bar">
-        <a href={`${homePath}#topo`} className="site-header__logo" aria-label="Movly, início" onClick={closeMenu}>
+        <a href={`${homePath}#topo`} className="site-header__logo" aria-label="movly. by ACAF Brasil, início" onClick={closeMenu}>
           <BrandLogo variant="purple" height={37} />
         </a>
 

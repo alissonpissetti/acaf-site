@@ -1846,6 +1846,14 @@ img {
     flex: 1 1 100%;
   }
 
+  .site-audience-tabs {
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+    border-radius: var(--radius-md);
+  }
+
   .site-hero__cta {
     flex-direction: column;
     align-items: stretch;
@@ -1953,6 +1961,11 @@ img {
 }
 
 @media (max-width: 520px) {
+  .site-audience-tabs__btn {
+    padding-inline: 12px;
+    font-size: 13px;
+  }
+
   .site-banner {
     font-size: 13px;
     padding-inline: 16px;
