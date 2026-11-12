@@ -1,3 +1,5 @@
+import { PartnerPortalVisual } from '../components/PartnerPortalVisual';
+
 const FEATURES = [
   [
     'Mais alunos, sem papelada',
@@ -12,16 +14,8 @@ export function PartnersSection() {
   return (
     <section id="academias" className="site-container site-container--pad-lg">
       <div className="site-split">
-        <div className="site-partners-visual">
-          <div className="site-partners-visual__ring" aria-hidden />
-          <div className="site-partners-visual__content">
-            <span style={{ fontWeight: 700 }}>repasse médio</span>
-            <span className="site-partners-visual__pct">~80%</span>
-            <span style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(20px,2.2vw,26px)' }}>
-              do valor fica com a sua academia
-            </span>
-            <span className="site-partners-visual__acaf">em parceria com a ACAF Brasil</span>
-          </div>
+        <div className="site-split__visual">
+          <PartnerPortalVisual />
         </div>
         <div className="site-split__copy">
           <span className="site-eyebrow">Para academias e estúdios</span>

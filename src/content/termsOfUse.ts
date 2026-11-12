@@ -50,7 +50,7 @@ export const TERMS_OF_USE_SECTIONS: LegalSection[] = [
     id: 'pagamentos',
     title: '5. Planos e pagamentos',
     paragraphs: [
-      'Valores de planos de assinatura são exibidos no aplicativo e podem variar conforme o plano Connect cadastrado na plataforma. A parte paga pela empresa é definida no contrato corporativo e não substitui eventuais valores devidos pelo colaborador.',
+      'Valores de planos de assinatura são exibidos no aplicativo e podem variar conforme o plano de assinatura cadastrado na plataforma Movly. A parte paga pela empresa é definida no contrato corporativo e não substitui eventuais valores devidos pelo colaborador.',
       'Cobranças de colaboradores são processadas por meios de pagamento integrados à plataforma (por exemplo, gateways e provedores de cobrança). Empresas recebem faturamento mensal conforme regras de uso (colaboradores com check-in no período).',
       'Em caso de inadimplência, o acesso pode ser suspenso até regularização.',
     ],

@@ -1,18 +1,32 @@
 :root {
   --movly-lime: #cbf74f;
   --movly-purple: #8254e4;
+  --movly-purple-strong: #6a3fd0;
   --movly-sky: #89b4e0;
   --movly-periwinkle: #7579e5;
   --movly-purple-deep: #2a1b57;
-  --movly-ink: #1a1530;
-  --movly-body: #3d3756;
-  --movly-muted: #6f6a86;
+  --movly-ink: #17142b;
+  --movly-body: #4a4660;
+  --movly-muted: #858199;
   --movly-surface: #ffffff;
-  --movly-surface-muted: #f6f5fb;
-  --movly-border: #e9e6f2;
+  --movly-surface-muted: #f5f5f8;
+  --movly-border: #ebeaf1;
 
+  --movly-accent-soft: rgba(130, 84, 228, 0.1);
   --movly-gradient: linear-gradient(160deg, var(--movly-sky) 0%, var(--movly-periwinkle) 100%);
   --movly-gradient-cta: linear-gradient(135deg, var(--movly-sky) 0%, var(--movly-periwinkle) 100%);
+  --movly-gradient-diagonal: linear-gradient(
+    135deg,
+    var(--movly-sky) 0%,
+    var(--movly-periwinkle) 55%,
+    var(--movly-purple) 100%
+  );
+  --movly-gradient-hero: linear-gradient(
+    145deg,
+    #7344d8 0%,
+    var(--movly-purple) 42%,
+    #6e48e0 100%
+  );
 
   --font-display: 'Unbounded', 'Figtree', system-ui, sans-serif;
   --font-body: 'Figtree', system-ui, -apple-system, sans-serif;
@@ -27,5 +41,10 @@
   --container-header: 1280px;
   --container-hero: 1408px;
 
-  --shadow-card: 0 30px 70px rgba(42, 27, 87, 0.18);
+  --shadow-card: 0 12px 32px rgba(42, 27, 87, 0.12);
+  --shadow-elevated: 0 24px 56px rgba(42, 27, 87, 0.16);
+  --shadow-glow-lime: 0 12px 36px rgba(203, 247, 79, 0.35);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --header-height: 76px;
 }

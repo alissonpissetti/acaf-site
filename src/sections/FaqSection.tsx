@@ -4,13 +4,17 @@ import { FaqPlusIcon } from '../components/icons';
 
 const TABS: FaqTab[] = ['emp', 'col', 'aca'];
 
-export function FaqSection() {
-  const [tab, setTab] = useState<FaqTab>('emp');
+type FaqSectionProps = {
+  defaultTab?: FaqTab;
+};
+
+export function FaqSection({ defaultTab = 'col' }: FaqSectionProps) {
+  const [tab, setTab] = useState<FaqTab>(defaultTab);
   const items = FAQ_BY_TAB[tab];
 
   return (
-    <section id="duvidas" className="site-container site-container--pad-lg" style={{ maxWidth: 960 }}>
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, marginBottom: 32 }}>
+    <section id="duvidas" className="site-container site-container--pad-lg site-faq">
+      <div className="site-section-head site-section-head--compact">
         <span className="site-eyebrow">Dúvidas</span>
         <h2 className="site-h2">perguntas que todo mundo faz.</h2>
       </div>

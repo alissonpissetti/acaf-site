@@ -79,7 +79,7 @@ export function ContactSection() {
 
   return (
     <section id="contato" className="site-contact">
-      <div className="site-contact__shell">
+      <div className="site-contact__shell movly-grain">
         <div className="site-contact__ring" aria-hidden />
         <div className="site-contact__grid">
           <div style={{ flex: '1 1 400px', display: 'flex', flexDirection: 'column', gap: 18 }}>

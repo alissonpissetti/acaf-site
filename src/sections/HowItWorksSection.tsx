@@ -22,7 +22,7 @@ const STEPS = [
 export function HowItWorksSection() {
   return (
     <section id="como-funciona" className="site-container site-container--pad">
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 14, maxWidth: 720, marginBottom: 48 }}>
+      <div className="site-section-head">
         <span className="site-eyebrow">Como funciona</span>
         <h2 className="site-h2">movly em 3 passos.</h2>
         <p className="site-lead">
